@@ -13,16 +13,43 @@
             setTimeout(() => {
                 //added this delay here as some solutions may require it to update properly (i.e., click code may complete before the navigation changes)
                 //TODO: add code for processing the current selection 
-
+                
+                
                 //Note: likely you'll want to call updateCurrentPage towards the end
+                updateCurrentPage("#");
             }, 100);
         }
     </script>
     <style>
         /* TODO: make edits here */
-          nav {
+          nav li {
             display: inline;
+            font-size:150%;
         }
+          nav ul {
+            background-color: orange;
+
+          }  
+          nav li:hover {
+              background-color: darkorange;
+          }
+          ul {
+            list-style-type: "\2714";
+          }
+        
+          h1 {
+              text-transform: capitalize;
+          }
+
+          nav ul {
+              text-align: center;
+              outline-style:solid;
+              outline-color:darkred;
+              outline-width:thick;
+              text-transform: capitalize;
+        }
+          
+
     </style>
     <!-- make the necessary edits above this line -->
 
