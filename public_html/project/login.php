@@ -15,7 +15,6 @@ require(__DIR__ . "/../../partials/nav.php"); ?>
     function validate(form) {
         //TODO 1: implement JavaScript validation
         //ensure it returns false for an error and true for success
-
         return true;
     }
 </script>
@@ -36,7 +35,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
    $email=sanitize_email($email);
     //validate
    // if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-       if (!is-valid_email($email)); 
+       if (!is_valid_email($email)) { 
         array_push($errors, "Invalid email address");
     }
     if (empty($password)) {
