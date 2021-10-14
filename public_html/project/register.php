@@ -1,31 +1,5 @@
 <?php
 require(__DIR__ . "/../../partials/nav.php");
-?>
-<form onsubmit="return validate(this)" method="POST">
-    <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" required />
-    </div>
-    <div>
-        <label for="pw">Password</label>
-        <input type="password" id="pw" name="password" required minlength="8" />
-    </div>
-    <div>
-        <label for="confirm">Confirm</label>
-        <input type="password" name="confirm" required minlength="8" />
-    </div>
-    <input type="submit" value="Register" />
-</form>
-<script>
-    function validate(form) {
-        //TODO 1: implement JavaScript validation
-        //ensure it returns false for an error and true for success
-
-        return true;
-    }
-</script>
-<?php
-require(__DIR__ . "/../../partials/nav.php");
 reset_session();
 ?>
 <form onsubmit="return validate(this)" method="POST">
@@ -79,7 +53,7 @@ if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm
         flash("Invalid email");
         $hasError = true;
     }
-    if (!preg_match('/^[a-z0-9_-]{3,16}$/', $username)) {
+    if (!preg_match('/^[a-z0-9_-]{3,30}$/i', $username)) {
         flash("Username must only be alphanumeric and can only contain - or _");
         $hasError = true;
     }
