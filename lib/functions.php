@@ -36,12 +36,8 @@ function is_valid_email($email = "")
     return filter_var(trim($email), FILTER_VALIDATE_EMAIL);
 }
 //TODO 3: User Helpers
-function is_logged_in($redirect = false, $destination = "login.php")
+function is_logged_in()
 {
-    if ($redirect) {
-        flash("You must be logged in to view this page", "warning");
-        die(header("Location: $destination"));
-    }
     return isset($_SESSION["user"]); //se($_SESSION, "user", false, false);
 }
 function has_role($role)
@@ -102,6 +98,7 @@ function reset_session()
 {
     session_unset();
     session_destroy();
+    session_start();
 }
 function users_check_duplicate($errorInfo)
 {
