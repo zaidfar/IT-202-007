@@ -1,3 +1,13 @@
+<canvas id="canvas" width="600" height="400" tabindex="1"></canvas>
+
+<style>
+#canvas {
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+  }
+</style>
+
 <script>
 // Canvas Pong
 
@@ -47,7 +57,7 @@ var rightScore = 0;
 
 // Create the ball
 var ballLength = 15;
-var ballSpeed = 2;
+var ballSpeed = 100;
 var ball = makeRect(0, 0, ballLength, ballLength, ballSpeed, '#000000');
 
 // Modify the ball object to have two speed properties, one for X and one for Y
@@ -141,6 +151,7 @@ function menu() {
   context.fillText('Player 1: W (up) and S (down)', 5, (canvas.height / 3) * 2);
   context.textAlign = 'right';
   context.fillText('Player 2: UP (up) and DOWN (down)', canvas.width - 5, (canvas.height / 3) * 2);
+
   // Start the game on a click
   canvas.addEventListener('click', startGame);
 }
@@ -164,6 +175,8 @@ function endGame() {
   var winner = 1;
   if (rightScore === 10) winner = 2;
   context.fillText('Player ' + winner + ' wins!', canvas.width/2, canvas.height/2);
+  context.fillText(counter, canvas.width/3, canvas.height/2);
+ 
 }
 
 // Clear the canvas
@@ -247,4 +260,21 @@ function draw() {
 // Show the menu to start the game
 menu();
 canvas.focus();
+var counter=0;
+function setup() {
+   
+
+    var timer= select('#timer');
+    timer.html('0');
+
+    function timeIt() {
+        counter++;
+        timer.html(counter);
+        
+    }
+    
+    setInterval(timeIt, 1000);
+    
+}
+
 </script>
