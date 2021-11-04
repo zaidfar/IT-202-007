@@ -176,10 +176,11 @@ function endGame() {
   var winner = 1;
   if (rightScore === 10) winner = 2;
   context.fillText('Player ' + winner + ' wins!', canvas.width/2, canvas.height/2);
+
  // shows the score at the end of the game for both players
   context.fillText('Player 1: ' +leftScore, canvas.width/3, canvas.height/3);
   context.fillText('Player 2: ' +rightScore, canvas.width/1.5, canvas.height/3);
- 
+
 }
 
 // Clear the canvas
