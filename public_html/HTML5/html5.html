@@ -32,6 +32,7 @@ var keys = {
 function makeRect(x, y, width, height, speed, color) {
   if (!color) color = '#000000';
   return {
+      
     x: x,
     y: y,
     w: width,
@@ -57,7 +58,7 @@ var rightScore = 0;
 
 // Create the ball
 var ballLength = 15;
-var ballSpeed = 100;
+var ballSpeed = 5;
 var ball = makeRect(0, 0, ballLength, ballLength, ballSpeed, '#000000');
 
 // Modify the ball object to have two speed properties, one for X and one for Y
@@ -240,6 +241,9 @@ function draw() {
     resetBall();
     ball.sX *= -1;
   }
+  // Makes it so that the losing paddle is red colored
+  leftPaddle.c=(leftScore< rightScore?"red" :"black")
+  rightPaddle.c=(leftScore> rightScore?"red" :"black")
   // Draw the paddles and ball
   leftPaddle.draw();
   rightPaddle.draw();
@@ -278,5 +282,6 @@ function setup() {
     setInterval(timeIt, 1000);
     
 }
+
 
 </script>
