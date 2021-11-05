@@ -13,5 +13,4 @@ $dbhost   = $db_url["host"];
 $dbuser = $db_url["user"];
 $dbpass = $db_url["pass"];
 $dbdatabase       = substr($db_url["path"],1);
-
 ?>
