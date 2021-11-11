@@ -1,17 +1,17 @@
 .alert-success {
-    background-color: rgb(19, 0, 128)
+    background-color: rgb(236, 235, 240)
 }
 
 .alert-warning {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(243, 239, 239);
 }
 
 .alert-danger {
-    background-color: rgb(15, 14, 14);
+    background-color: rgb(245, 244, 244);
 }
 
 .alert-info {
-    background-color: teal;
+    background-color: rgb(241, 245, 245);
 }
 nav li{
     
