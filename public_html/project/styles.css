@@ -1,0 +1,46 @@
+.alert-success {
+    background-color: rgb(236, 235, 240)
+}
+
+.alert-warning {
+    background-color: rgb(243, 239, 239);
+}
+
+.alert-danger {
+    background-color: rgb(245, 244, 244);
+}
+
+.alert-info {
+    background-color: rgb(241, 245, 245);
+}
+nav li{
+    
+    display: inline; 
+    padding: 1%;
+    
+}
+
+nav ul{ 
+    text-align: center;
+    background-color: orange;
+    outline-style:solid;
+    outline-color:darkred;
+
+}
+
+nav li:hover {
+    
+}
+
+nav li a{
+    display: inline;
+    color: rgb(10, 10, 10);
+    font-size:2em;
+}
+
+body{
+    background-color: rgb(253, 253, 253);
+    color: rgb(153, 0, 0);
+    
+
+}
