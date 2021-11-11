@@ -23,3 +23,20 @@
 
     moveMeUp(document.getElementById("flash"));
 </script>
+<style>
+    .alert-success {
+        background-color: white
+    }
+
+    .alert-warning {
+        background-color: white;
+    }
+
+    .alert-danger {
+        background-color: white;
+    }
+
+    .alert-info {
+        background-color: white;
+    }
+</style>
