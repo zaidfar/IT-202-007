@@ -16,7 +16,7 @@
 nav li{
     
     display: inline; 
-    padding: 1%;
+    padding: 2%;
     
 }
 
@@ -28,9 +28,7 @@ nav ul{
 
 }
 
-nav li:hover {
-    
-}
+
 
 nav li a{
     display: inline;
