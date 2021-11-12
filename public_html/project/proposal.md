@@ -25,16 +25,56 @@
 ### Proposal Checklist and Evidence
 
 - Milestone 1
-    - [ ] (11/11/2021 of completion) User will be able to register a new account.
+    - [1 ] (11/11/2021 of completion) User will be able to register a new account.
     -  List of Evidence of Feature Completion
         - Status:(Completed)
+        - Direct Link: https://zf5-prod.herokuapp.com/project/register.php 
+        - Pull Requests
+        - PR link #1 (repeat as necessary)
+        - Screenshots
+        - Screenshot #1 ![image](https://user-images.githubusercontent.com/90267391/141398456-29855a4f-f08c-47c7-ad36-4ce114f9ad23.png)
+            - Screenshot #1 description: A picture showing a user getting registered
+         - Screenshot #2 ![image](https://user-images.githubusercontent.com/90267391/141398523-e22e857c-47d5-4748-ad26-13d39898e497.png)
+         - Screenshot #2 description: Database showing second registered User
+    - [ 2] (11/11/2021 of completion) User will be able to login to their account (given they enter the correct credentials)
+    -  List of Evidence of Feature Completion
+        - Status: Pending (Completed)
+        - Direct Link: https://zf5-prod.herokuapp.com/project/login.php
+        - Pull Requests
+        - PR link #1 (repeat as necessary)
+        - Screenshots
+        - Screenshot #1 ![image](https://user-images.githubusercontent.com/90267391/141399378-84d535b8-ea3d-4ca1-b213-2f7157593869.png)
+            - Screenshot #1 Showing the page after the user "admin" logged in
+    - [ 3] (11/11/2021 of completion) User will be able to logout
+    -  List of Evidence of Feature Completion
+        - Status: Pending (Completed)
+        - Direct Link: https://zf5-prod.herokuapp.com/project/logout.php
+        - Pull Requests
+        - PR link #1 (repeat as necessary)
+        - Screenshots
+        - Screenshot #1 ![image](https://user-images.githubusercontent.com/90267391/141399977-9fbbaec4-e77f-44fe-b065-650d485d2e18.png)
+            - Screenshot #1 description: Message showing the user has successfully logged out
+    - [ 4] (11/11/2021 of completion) Basic security rules implemented
+    -  List of Evidence of Feature Completion
+        - Status: Pending (Completed)
+        - Direct Link: https://zf5-prod.herokuapp.com/project/admin/assign_roles.php
+        - Pull Requests
+        - PR link #1 (repeat as necessary)
+        - Screenshots
+        - Screenshot #1 ![image](https://user-images.githubusercontent.com/90267391/141401403-9b1f033f-d2c5-438a-a0f8-e0c95615c03e.png)
+            - Screenshot #1 description: I try to link directly to assign_roles.php which is only a page an admin user role can go too.  Since no account is logged in with admin roles the page does not let you navigate to that page, which is a security rule.
+        
+    - [ 5] (11/11/2021 of completion) Basic Roles implemented
+    -  List of Evidence of Feature Completion
+        - Status: Pending (Completed)
         - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
         - Pull Requests
         - PR link #1 (repeat as necessary)
         - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-            - Screenshot #1 description explaining what you're trying to show
-    - [ ] (mm/dd/yyyy of completion) User will be able to login to their account (given they enter the correct credentials)
+        - Screenshot #1 ![image](https://user-images.githubusercontent.com/90267391/141402294-f3b5eca4-11d8-4b28-8f31-1c835a48339b.png)
+            - Screenshot #1 description: This is a screenshot of the Admin Role in my database
+            
+    - [ 6] (mm/dd/yyyy of completion) Site should have basic styles/theme applied everything     should be styled
     -  List of Evidence of Feature Completion
         - Status: Pending (Completed, Partially working, Incomplete, Pending)
         - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
@@ -43,7 +83,7 @@
         - Screenshots
         - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
             - Screenshot #1 description explaining what you're trying to show
-    - [ ] (mm/dd/yyyy of completion) User will be able to logout
+    - [ 7] (mm/dd/yyyy of completion)Any output messages/errors should be “user friendly”
     -  List of Evidence of Feature Completion
         - Status: Pending (Completed, Partially working, Incomplete, Pending)
         - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
@@ -52,7 +92,7 @@
         - Screenshots
         - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
             - Screenshot #1 description explaining what you're trying to show
-    - [ ] (mm/dd/yyyy of completion) Basic security rules implemented
+    - [ 8] (mm/dd/yyyy of completion)User will be able to see their profile
     -  List of Evidence of Feature Completion
         - Status: Pending (Completed, Partially working, Incomplete, Pending)
         - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
@@ -61,43 +101,7 @@
         - Screenshots
         - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
             - Screenshot #1 description explaining what you're trying to show
-    - [ ] (mm/dd/yyyy of completion) Basic Roles implemented
-    -  List of Evidence of Feature Completion
-        - Status: Pending (Completed, Partially working, Incomplete, Pending)
-        - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-        - Pull Requests
-        - PR link #1 (repeat as necessary)
-        - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-            - Screenshot #1 description explaining what you're trying to show
-    - [ ] (mm/dd/yyyy of completion) Site should have basic styles/theme applied everything     should be styled
-    -  List of Evidence of Feature Completion
-        - Status: Pending (Completed, Partially working, Incomplete, Pending)
-        - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-        - Pull Requests
-        - PR link #1 (repeat as necessary)
-        - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-            - Screenshot #1 description explaining what you're trying to show
-    - [ ] (mm/dd/yyyy of completion)Any output messages/errors should be “user friendly”
-    -  List of Evidence of Feature Completion
-        - Status: Pending (Completed, Partially working, Incomplete, Pending)
-        - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-        - Pull Requests
-        - PR link #1 (repeat as necessary)
-        - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-            - Screenshot #1 description explaining what you're trying to show
-    - [ ] (mm/dd/yyyy of completion)User will be able to see their profile
-    -  List of Evidence of Feature Completion
-        - Status: Pending (Completed, Partially working, Incomplete, Pending)
-        - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-        - Pull Requests
-        - PR link #1 (repeat as necessary)
-        - Screenshots
-        - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-            - Screenshot #1 description explaining what you're trying to show
-   - [ ] (mm/dd/yyyy of completion)User will be able to edit their profile
+   - [ 9] (mm/dd/yyyy of completion)User will be able to edit their profile
     -  List of Evidence of Feature Completion
         - Status: Pending (Completed, Partially working, Incomplete, Pending)
         - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
