@@ -6,7 +6,7 @@ $db = getDB();
 //Sort and Filters
 $col = se($_GET, "col", "cost", false);
 //allowed list
-if (!in_array($col, ["cost", "stock", "name", "created"])) {
+if (!in_array($col, ["cost", "stock", "name", "category","created"])) {
     $col = "cost"; //default value, prevent sql injection
 }
 $order = se($_GET, "order", "asc", false);
@@ -17,10 +17,10 @@ if (!in_array($order, ["asc", "desc"])) {
 $name = se($_GET, "name", "", false);
 
 //split query into data and total
-$base_query = "SELECT id, name,category, description, cost, stock, image FROM Products items";
+$base_query = "SELECT id, name, category, description, cost, stock, image FROM Products items";
 $total_query = "SELECT count(1) as total FROM Products items";
 //dynamic query
-$query = " WHERE 1=1"; //1=1 shortcut to conditionally build AND clauses
+$query = " WHERE 1=1 and visibility > 0"; //1=1 shortcut to conditionally build AND clauses
 $params = []; //define default params, add keys as needed and pass to execute
 //apply name filter
 if (!empty($name)) {
@@ -32,7 +32,7 @@ if (!empty($col) && !empty($order)) {
     $query .= " ORDER BY $col $order"; //be sure you trust these values, I validate via the in_array checks above
 }
 //paginate function
-$per_page = 3;
+$per_page = 10;
 paginate($total_query . $query, $params, $per_page);
 //get the total
 /* this comment block has been replaced by paginate()
@@ -65,7 +65,7 @@ foreach ($params as $key => $value) {
 $params = null; //set it to null to avoid issues
 
 
-$stmt = $db->prepare("SELECT id, name, category, description, cost, stock, image FROM Products WHERE stock > 0 and visibility > 0 LIMIT 50");
+//$stmt = $db->prepare("SELECT id, name, category, description, cost, stock, image FROM Products WHERE stock > 0 and visibility > 0 LIMIT 50");
 try {
     $stmt->execute($params); //dynamically populated params to bind
     $r = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -162,7 +162,7 @@ try {
                     <option value="stock">Stock</option>
                     <option value="name">Name</option>
                     <option value="created">Created</option>
-                    <option value="Category">Category</option>
+                    <option value="category">Category</option>
                 </select>
                 <script>
                     //quick fix to ensure proper value is selected since
