@@ -22,6 +22,7 @@
     }
 
     moveMeUp(document.getElementById("flash"));
+
 </script>
 <style>
     .alert-success {
