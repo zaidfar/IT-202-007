@@ -204,6 +204,12 @@ try {
                     <div class="card-footer">
                         Cost: <?php se($item, "cost"); ?>
                         <button onclick="purchase('<?php se($item, 'id'); ?>','<?php se($item, 'cost'); ?>')" class="btn btn-primary">Purchase</button>
+                        <!-- making edit button -->
+                        <?php if(has_role("Admin")) :?>
+                            <a href="admin/edit_item.php?id=<?php se($item,'id'); ?> " >edit</a>
+                       <!-- Useless edit button <button onclick="edit('<?php se($item, 'id'); ?>','<?php se($item, 'cost'); ?>')" class="btn btn-primary">Edit</button> -->
+                        <?php endif;?>
+
                         <!-- example form submit-->
                         <form action="api/purchase_item.php" method="POST">
                             <input type="hidden" name="item_id" value="<?php se($item, 'id'); ?>" />
