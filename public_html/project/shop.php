@@ -191,7 +191,7 @@ try {
             <div class="col">
                 <div class="card bg-dark">
                     <div class="card-header">
-                        Placeholder
+                        Product
                     </div>
                     <?php if (se($item, "image", "", false)) : ?>
                         <img src="<?php se($item, "image"); ?>" class="card-img-top" alt="...">
@@ -206,16 +206,18 @@ try {
                         <button onclick="purchase('<?php se($item, 'id'); ?>','<?php se($item, 'cost'); ?>')" class="btn btn-primary">Purchase</button>
                         <!-- making edit button -->
                         <?php if(has_role("Admin")) :?>
-                            <a href="admin/edit_item.php?id=<?php se($item,'id'); ?> " >edit</a>
+                            <a href="admin/edit_item.php?id=<?php se($item,'id'); ?> " >Edit</a>
                        <!-- Useless edit button <button onclick="edit('<?php se($item, 'id'); ?>','<?php se($item, 'cost'); ?>')" class="btn btn-primary">Edit</button> -->
                         <?php endif;?>
+                        <a href="product_detail.php?id=<?php se($item,'id'); ?> " >Product Detail</a>
 
                         <!-- example form submit-->
-                        <form action="api/purchase_item.php" method="POST">
+
+                     <!-- We do not need puchase_item.php because its arcade  <form action="api/purchase_item.php" method="POST">
                             <input type="hidden" name="item_id" value="<?php se($item, 'id'); ?>" />
                             <input type="hidden" name="cost" value="<?php se($item, 'cost'); ?>" />
-                            <input type="hidden" name="quantity" value="1" />
-                            <input type="submit" value="Buy (form)" />
+                            <input type="hidden" name="quantity" value="1" />      
+                            <input type="submit" value="Buy (form)" /> end comment-->
                         </form>
                     </div>
                 </div>
