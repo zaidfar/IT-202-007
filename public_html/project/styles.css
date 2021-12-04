@@ -14,31 +14,24 @@
     background-color: rgb(241, 245, 245);
 }
 nav li{
-    
+
     display: inline; 
     padding: 1%;
-    
+
 }
 
 nav ul{ 
     text-align: center;
-    background-color: orange;
-    outline-style:solid;
-    outline-color:darkred;
 
 }
-
-
 
 nav li a{
     display: inline;
-    color: rgb(10, 10, 10);
-    font-size:2em;
+    color: rgb(114, 90, 90);
+    font-size: 1.2em;
 }
 
 body{
-    background-color: rgb(54, 54, 51);
+    background-color: rgb(78, 62, 62);
     color: rgb(255, 255, 255);
-    
-
 }
