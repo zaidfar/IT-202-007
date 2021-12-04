@@ -478,37 +478,38 @@ function get_latest_scores($user_id, $limit = 10)
     }
     return [];
 }
-function add_item($item_id, $user_id, $quantity = 1)
+function update_cart($item_id, $user_id, $desired_quantity = 1)
 {
-    error_log("add_item() Item ID: $item_id, User_id: $user_id, Quantity $quantity");
+    error_log("add_item() Item ID: $item_id, User_id: $user_id, Desired_quantity $desired_quantity");
     //I'm using negative values for predefined items so I can't validate >= 0 for item_id
-    if (/*$item_id <= 0 ||*/$user_id <= 0 || $quantity === 0) {
+    if (/*$item_id <= 0 ||*/$user_id <= 0 || $desired_quantity === 0) {
         
         return;
     }
     $db = getDB();
-    $stmt = $db->prepare("INSERT INTO BGD_Inventory (item_id, user_id, quantity) VALUES (:iid, :uid, :q) ON DUPLICATE KEY UPDATE quantity = quantity + :q");
+    $stmt = $db->prepare("INSERT INTO Cart (item_id, user_id, desired_quantity) VALUES (:iid, :uid, :q) ON DUPLICATE KEY UPDATE desired_quantity = desired_quantity + :q");
     try {
         //if using bindValue, all must be bind value, can't split between this an execute assoc array
-        $stmt->bindValue(":q", $quantity, PDO::PARAM_INT);
+        $stmt->bindValue(":q", $desired_quantity, PDO::PARAM_INT);
         $stmt->bindValue(":iid", $item_id, PDO::PARAM_INT);
         $stmt->bindValue(":uid", $user_id, PDO::PARAM_INT);
         $stmt->execute();
         return true;
     } catch (PDOException $e) {
-        error_log("Error adding $quantity of $item_id to user $user_id: " . var_export($e->errorInfo, true));
+        error_log("Error adding $desired_quantity of $item_id to user $user_id: " . var_export($e->errorInfo, true));
     }
     return false;
 }
-function record_purchase($item_id, $user_id, $quantity, $cost)
+function add_to_cart($item_id, $user_id, $quantity, $cost)
 {
     //I'm using negative values for predefined items so I can't validate >= 0 for item_id
     if (/*$item_id <= 0 ||*/$user_id <= 0 || $quantity === 0) {
-        error_log("record_purchase() Item ID: $item_id, User_id: $user_id, Quantity $quantity");
+        error_log("add_to_cart() Item ID: $item_id, User_id: $user_id, Quantity $quantity");
         return;
     }
     $db = getDB();
-    $stmt = $db->prepare("INSERT INTO BGD_PurchaseHistory (item_id, user_id, quantity, unit_cost) VALUES (:iid, :uid, :q, :uc)");
+    $stmt = $db->prepare("INSERT INTO Cart (item_id, user_id, desired_quantity, unit_cost) VALUES (:iid, :uid, :q, :uc) ON DUPLICATE KEY UPDATE desired_quantity = desired_quantity + :q, unit_cost = :uc");
+    // adding to cart on duplicate key
     try {
         $stmt->execute([":iid" => $item_id, ":uid" => $user_id, ":q" => $quantity, ":uc" => $cost]);
         return true;

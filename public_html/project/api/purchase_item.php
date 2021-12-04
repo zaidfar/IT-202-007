@@ -19,11 +19,7 @@ if (isset($_POST["item_id"]) && isset($_POST["quantity"]) && isset($_POST["cost"
         array_push($errors, "Invalid user");
         $isValid = false;
     }
-    if ($balance <= 0 || $cost <= 0) {
-        //not enough funds
-        array_push($errors, "Invalid balance or cost");
-        $isValid = false;
-    }
+   
     //I'll have predefined items loaded in at negative values
     //so I don't need/want this check
     /*if ($item_id <= 0) {
@@ -36,14 +32,14 @@ if (isset($_POST["item_id"]) && isset($_POST["quantity"]) && isset($_POST["cost"
         array_push($errors, "Invalid quantity");
         $isValid = false;
     }
-    if (($cost * $quantity) > $balance) {
+   // if (($cost * $quantity) > $balance) {
         //can't afford
-        array_push($errors, "Insufficient funds");
-        $isValid = false;
-    }
+     //   array_push($errors, "Insufficient funds");
+     //   $isValid = false;
+   // }
     //get true price from DB, don't trust the client
     $db = getDB();
-    $stmt = $db->prepare("SELECT name,cost FROM BGD_Items where id = :id");
+    $stmt = $db->prepare("SELECT name,cost FROM Products where id = :id");
     $name = "";
     try {
         $stmt->execute([":id" => $item_id]);
@@ -57,17 +53,16 @@ if (isset($_POST["item_id"]) && isset($_POST["quantity"]) && isset($_POST["cost"
         $isValid = false;
     }
     if ($isValid) {
-        if (change_bills($cost * $quantity, "purchase", get_user_account_id(), -1, "Purchased $quantity $name")) {
-            record_purchase($item_id, $user_id, $quantity, $cost);
-            add_item($item_id, $user_id, $quantity);
+            add_to_cart($item_id, $user_id, $quantity, $cost); 
             http_response_code(200);
-            $response["message"] = "Purchased $quantity of $name";
+            $response["message"] = "$name is added to cart";
             //success
-        } else {
-            error_log("Problem creating transaction");
-        }
-    } else {
-        $response["message"] = join("<br>", $errors);
+            } 
+        else {
+            http_response_code(200); {
+            $response["message"] = "You're not logged in";
+        
     }
+}
 }
 echo json_encode($response);

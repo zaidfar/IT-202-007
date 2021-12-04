@@ -77,7 +77,7 @@ try {
 }
 ?>
 <script>
-    function purchase(item, cost) {
+    function purchase(event, item, cost) {
         console.log("TODO purchase item", item);
         let example = 1;
         if (example === 1) {
@@ -88,7 +88,7 @@ try {
                         let data = JSON.parse(http.responseText);
                         console.log("received data", data);
                         flash(data.message, "success");
-                        refreshBalance();
+                      //  refreshBalance();
                     }
                     console.log(http);
                 }
@@ -203,7 +203,7 @@ try {
                     </div>
                     <div class="card-footer">
                         Cost: <?php se($item, "cost"); ?>
-                        <button onclick="purchase('<?php se($item, 'id'); ?>','<?php se($item, 'cost'); ?>')" class="btn btn-primary">Purchase</button>
+                        <button onclick="purchase(event,'<?php se($item, 'id'); ?>','<?php se($item, 'cost'); ?>')" class="btn btn-primary">Add to Cart</button>
                         <!-- making edit button -->
                         <?php if(has_role("Admin")) :?>
                             <a href="admin/edit_item.php?id=<?php se($item,'id'); ?> " >Edit</a>
