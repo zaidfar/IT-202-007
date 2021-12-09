@@ -478,6 +478,35 @@ function get_latest_scores($user_id, $limit = 10)
     }
     return [];
 }
+function delete_item($item_id, $user_id)
+{
+    error_log("add_item() Item ID: $item_id, User_id: $user_id");
+    $db=getDB();
+    $stmt = $db->prepare("DELETE FROM Cart where item_id = :cart_id and user_id=:uid");
+    try {
+        $stmt->execute([":cart_id" => $item_id, ":uid" =>$user_id]);
+        return true;
+    }catch (PDOException $e) {
+        error_log("Error deleting $item_id to user $user_id: " . var_export($e->errorInfo, true)); 
+    }
+    return false;
+}
+function empty_cart($user_id)
+{
+    error_log("add_item() Item ID: User_id: $user_id");
+    $db = getDB();
+    $stmt = $db->prepare("DELETE FROM Cart where user_id = :uid");
+    try {
+        $stmt->execute([":uid" =>$user_id]);
+        return true;
+    }catch (PDOException $e) {
+        error_log("Error emptying cart of $user_id: " . var_export($e->errorInfo, true));
+    }
+    return false;
+}
+
+
+
 function update_cart($item_id, $user_id, $desired_quantity = 1)
 {
     error_log("add_item() Item ID: $item_id, User_id: $user_id, Desired_quantity $desired_quantity");

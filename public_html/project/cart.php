@@ -1,16 +1,22 @@
 <?php
-
-//note we need to go up 1 more directory
 require(__DIR__ . "/../../partials/nav.php");
-
-
-$db = getDB();
+require_once(__DIR__ . "/../../lib/functions.php");
+?>
+<?php
 $results = [];
-if (!isset($user_id)) {
-    $user_id = get_user_id();
+if(isset($_POST["delete"])){
+    if(delete_item($_POST["productid"], get_user_id())){
+        flash("Item removed from the cart", "success");;
+    }
 }
-error_log("inventory");
-$stmt = $db->prepare("SELECT products.id, name, unit_cost, desired_quantity FROM Cart carts JOIN Products products on carts.item_id = products.id WHERE carts.user_id = :uid");
+if(isset($_POST["empty"])){
+    if(empty_cart(get_user_id())){
+        flash("All item removed from the cart", "success");;
+    }
+}
+$user_id = get_user_id();
+$db = getDB();
+$stmt = $db->prepare("SELECT item_id, name, /*user_id,*/ desired_quantity, unit_cost FROM Cart JOIN Products on Cart.item_id = Products.id WHERE user_id = :uid");
 try {
     $stmt->execute([":uid" => $user_id]);
     $r = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -18,37 +24,121 @@ try {
         $results = $r;
     }
 } catch (PDOException $e) {
-    error_log(var_export($e, true));
     flash("<pre>" . var_export($e, true) . "</pre>");
 }
-//TODO
-//display inventory output
-//allow triggering effects for next game session
-//store triggered items in a new table (so it persists between page loads and logouts)
+    
 ?>
-<h5>Cart</h5>
+<script>
+    function update_quantity(event,itemid) {
+        event.preventDefault()
+        var x = event.target.value;
+        console.log("TODO Update quantity item", itemid);
+            let http = new XMLHttpRequest();
+            http.onreadystatechange = () => {
+                if (http.readyState == 4) {
+                    if (http.status === 200) {
+                        let data = JSON.parse(http.responseText);
+                        console.log("received data", data);
+                        flash(data.message, "success");
+                        if (data.message.indexOf("remove")>-1){
+                            event.target.parentElement.parentElement.remove();
+                        }
+                    }
+                    console.log(http);
+                }
+            }
+            http.open("POST", "api/update_quantity.php");
+            let data = {
+                item_id: itemid,
+                quantity: x
+            }
+            let q = Object.keys(data).map(key => key + '=' + data[key]).join('&');
+            console.log(q)
+            http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            http.send(q);
+    }
+</script>
 
-<div class="row row-cols-auto g-4 justify-content-center">
-    <?php foreach ($results as $r) : ?>
-        <div class="col ">
-            <div class="card bg-dark " style="width:153px; height:153px">
-                <div class="card-body">
-                    <div class="card-text"><?php se($r, "name"); ?></div>
-                </div>
-                <div class="card-body">
-                    <div class="card-text"><?php se($r, "unit_price"); ?></div>
-                </div>
-                <div class="card-footer">
-                    <div class="text-center mb-3">
-                        <div class="desired_quantity">
-                            <?php se($r, "desired_quantity", 0); ?>x
-                        </div>
-                    </div> 
-                    <!--<div class="d-grid gap-2">
-                        <button class="btn btn-primary" onclick="activate_item(<?php se($r, 'id'); ?>, this)">Use</button>
-                    </div> -->
-                </div>
+<div class="container-fluid">
+    <h1>Cart</h1>
+        <table class="table text-dark">
+            <!--<?php print_r($results)  ?>-->
+            <?php global $cart_total; ?>
+            <?php global $total; ?>
+            <?php global $temp_id;?>
+            <?php global $temp_quantity;?>
+            <?php global $temp_cost;?>
+            <?php $temp_quantity = 0;?>
+            <?php foreach ($results as $index => $record) : ?> <!-- $result with all the information -->
+                <?php if ($index == 0) : ?>       <!-- $index is the number of rows in table  -->
+                    <thead>
+                            <tr>
+                                <th width="35%">Product</th>
+                                <th width="8%">Quantity</th>
+                                <th width ="15%"> </th>
+                                <th width="15%">Price</th>
+                                <th class="text-right" width="15%">Total</th>
+                            </tr>
+                        </thead>
+                    <thead>
+                        <?php foreach ($record as $column => $value) : ?>
+                            <!--<th><?php se($column); ?></th>--><!-- column names "header"-->
+                            
+                        <?php endforeach; ?>
+                    </thead>
+                <?php endif; ?>
+                <tr>
+                    <?php foreach ($record as $column => $value) : ?> <!-- for each row-->
+                            <?php if($column == "item_id") :?>
+                                <?php $temp_id = $value;?>
+                            <?php endif; ?>
+                            <?php if($column == "name") :?>
+                                <?php $temp_quantity = $value;?>
+                                <td><?php echo $value ?></td>
+                            <?php endif; ?>
+                            <?php if($column == "unit_cost") :?>
+                                <?php $temp_cost = $value?>
+                                <td> </td>
+                                <td><?php echo "$",$value ?></td>
+                            <?php endif; ?>
+                            <?php if($column == "desired_quantity") :?>
+                                <?php $temp_quantity = $value;?>
+                                <td><input class="form-control" type="number" id="lname" value="<?php echo $value ;?>" onchange ="update_quantity(event,'<?php se($temp_id); ?>')"/></td>
+                            <?php endif; ?>
+                            
+                        <!--<?php se($value, null, "N/A"); ?></td>--> <!--display values in a row "----"-->  
+                    <?php endforeach; ?>
+                <?php $total = $temp_quantity * $temp_cost;?> <!--calculating total for each item  -->
+                <?php $cart_total = $cart_total + $total;?>
+                <td><?php echo "$",$total ?></td>
+                <form method="POST">
+                <input type="hidden" name="productid" value="<?php echo$temp_id;?>" ></input>
+                <td><button type = "submit" class = "btn btn-sm btn-danger" onclick="" name ="delete">Remove</button> </td>
+                </form>
+                </tr>
+            <?php endforeach; ?>
+            <div >      
+                <thead >
+                    <?php if($temp_quantity > 0) :?>
+                        <tr >
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <th > <?php echo "Cart Total :"?></th>
+                            </td>
+                                <th> <?php echo "$",$cart_total ?></th>
+                                <form method="POST">
+                                <td><button type = "submit" name ="empty" class = "btn btn-sm btn-danger" onclick="">Empty the cart</button></td>
+                                </form>
+                        </tr> 
+                    <?php endif; ?>
+                </thead>
+                <?php if($temp_quantity == 0) :?>
+                    <h3 class="text" style="text-align:center"  >Your cart is empty</h3>
+                <?php endif; ?>
             </div>
-        </div>
-    <?php endforeach; ?>
+        </table> 
 </div>
+<?php
+require(__DIR__ . "/../../partials/footer.php");
+?>
