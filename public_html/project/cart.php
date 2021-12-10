@@ -42,6 +42,8 @@ try {
                         flash(data.message, "success");
                         if (data.message.indexOf("remove")>-1){
                             event.target.parentElement.parentElement.remove();
+                            
+
                         }
                     }
                     console.log(http);
@@ -77,13 +79,14 @@ try {
                                 <th width="8%">Quantity</th>
                                 <th width ="15%"> </th>
                                 <th width="15%">Price</th>
+                            
+
                                 <th class="text-right" width="15%">Total</th>
                             </tr>
                         </thead>
                     <thead>
                         <?php foreach ($record as $column => $value) : ?>
                             <!--<th><?php se($column); ?></th>--><!-- column names "header"-->
-                            
                         <?php endforeach; ?>
                     </thead>
                 <?php endif; ?>
@@ -104,7 +107,8 @@ try {
                             <?php if($column == "desired_quantity") :?>
                                 <?php $temp_quantity = $value;?>
                                 <td><input class="form-control" type="number" id="lname" value="<?php echo $value ;?>" onchange ="update_quantity(event,'<?php se($temp_id); ?>')"/></td>
-                            <?php endif; ?>
+                                
+                                <?php endif; ?>
                             
                         <!--<?php se($value, null, "N/A"); ?></td>--> <!--display values in a row "----"-->  
                     <?php endforeach; ?>
