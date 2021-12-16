@@ -128,109 +128,457 @@
         - Screenshot #1 ![image](https://user-images.githubusercontent.com/90267391/141408567-eb18f321-359f-467f-8d6f-2942fbb00a6c.png)
             - Screenshot #1 description:  There is a user message saying "password reset" showing that I changed the current password into a new one
 
-
-
 - Milestone 2
-- [ ] \(mm/dd/yyyy of completion) User with an admin role or shop owner role will be able to add products to inventory
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-- [ ] \(mm/dd/yyyy of completion) Any user will be able to see products with visibility = true on the Shop page
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-- [ ] \(mm/dd/yyyy of completion) Admin/Shop owner will be able to see products with any visibility
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-- [ ] \(mm/dd/yyyy of completion) Admin/Shop owner will be able to edit any product
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-- [ ] \(mm/dd/yyyy of completion) User will be able to click an item from a list and view a full page with more info about the item (Product Details Page)
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-- [ ] \(mm/dd/yyyy of completion) User must be logged in for any Cart related activity below
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-- [ ] \(mm/dd/yyyy of completion) User will be able to add items to Cart
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-- [ ] \(mm/dd/yyyy of completion) User will be able to see their cart
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-- [ ] \(mm/dd/yyyy of completion) User will be able to change quantity of items in their cart
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-- [ ] \(mm/dd/yyyy of completion) User will be able to remove a single item from their cart vai button click
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
-- [ ] \(mm/dd/yyyy of completion) User will be able to clear their entire cart via a button click
-  -  List of Evidence of Feature Completion
-    - Status: Pending (Completed, Partially working, Incomplete, Pending)
-    - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-    - Pull Requests
-      - PR link #1 (repeat as necessary)
-    - Screenshots
-      - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-        - Screenshot #1 description explaining what you're trying to show
 
+<table>
+<tr><td>Milestone 2</td></tr><tr><td>
+<table>
+<tr><td>F1 - User with an admin role or shop owner role will be able to add products to inventory (2021-12-03)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://zf5-prod.herokuapp.com/project/admin/add_item.php](https://zf5-prod.herokuapp.com/project/admin/add_item.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/zaidfar/IT-202-007/pull/58](https://github.com/zaidfar/IT-202-007/pull/58)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F1 - Table should be called Products (id, name, description, category, stock, created, modified, unit_price, visibility [true, false])</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144696804-accb6c91-4108-499c-9dca-cdf3489a55bf.png">
+<p>A screenshot of the admin adding a white sweater to my table</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144696839-22281b65-5b13-448a-a9c7-182cea149aa3.png">
+<p>The white sweater has been added to the Products table</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F2 - Any user will be able to see products with visibility = true on the Shop page (2021-12-03)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://zf5-prod.herokuapp.com/project/shop.php](https://zf5-prod.herokuapp.com/project/shop.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/zaidfar/IT-202-007/pull/60](https://github.com/zaidfar/IT-202-007/pull/60)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F2 - Product list page will be public (i.e. doesn’t require login)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144731138-fb5415bc-1b91-4ed6-81d2-e63d3f5013ee.png">
+<p>Nobody is logged in and the shop is displayed</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F2 - For now limit results to 10 most recent</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144731199-517486c4-aa35-4fd2-ab50-380040863df3.png">
+<p>Sorted by "Created" so it shows the most recently created items in the products table first.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F2 - User will be able to filter results by category</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144733517-8b9463a9-16a7-412e-95bd-f8b717ebc7ed.png">
+<p>I sorted by category, you can see that all the categories are separate.  All the shirts are listed together and all the other items are listed apart because they only have 1 of each.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F2 - User will be able to filter results by partial matches on the name</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144733588-d2b126c1-f0de-47a8-996e-3d7ab30a5959.png">
+<p>I typed in "White" and searched by name.  Its showing only items with the word "White" in it, which is sorting by a partial match,</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F2 - User will be able to sort results by price</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144733634-2d29721a-fd37-4a15-a6bc-743ddb12a728.png">
+<p>I sorted by price, and the products are sorted lowest price to highest price.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F3 - Admin/Shop owner will be able to see products with any visibility (2021-12-03)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://zf5-prod.herokuapp.com/project/admin/list_items.php](https://zf5-prod.herokuapp.com/project/admin/list_items.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/zaidfar/IT-202-007/pull/62](https://github.com/zaidfar/IT-202-007/pull/62)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F3 - This should be a separate page from Shop, but will be similar</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144734076-10c5821a-6195-4c88-8e6f-a3ac05ef7077.png">
+<p>Can see a list of all products in the Products tale.  I set the visibility to 1 for all items, but even if they were 0 the admin would see them.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F3 - This page should only be accessible to the appropriate role(s)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144734262-178427e9-4b98-4725-b3c1-39318fd2fbf9.png">
+<p>I tried to go to the admin list_items page as a non admin and I got the "You dont have permission to to view this page" message.  Only admins can access that page, which is intended.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F4 - Admin/Shop owner will be able to edit any product (2021-12-03)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://zf5-prod.herokuapp.com/project/admin/edit_item.php?id=1](https://zf5-prod.herokuapp.com/project/admin/edit_item.php?id=1)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/zaidfar/IT-202-007/pull/62](https://github.com/zaidfar/IT-202-007/pull/62)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F4 - Edit button should be accessible for the appropriate role(s) anywhere a product is shown (Shop list, Product Details Page, etc)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144734684-481377ab-05f3-4ee1-857d-6e10e6c1dafd.png">
+<p>Edit button in shop as admin</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144734707-e8eeb0bd-8400-4da9-bc30-efce4b15ecce.png">
+<p>Edit button in product detail page as admin</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144734732-37d23279-5b00-4970-9680-fcc648611bd5.png">
+<p>edit button in list item page as admin</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144734795-9c3c456e-b5dc-46be-881b-38a79b77b1c5.png">
+<p>Code says only admins can be linked to edit item page.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F5 - User will be able to click an item from a list and view a full page with more info about the item (Product Details Page) (2021-12-03)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://zf5-prod.herokuapp.com/project/product_detail.php?id=5](https://zf5-prod.herokuapp.com/project/product_detail.php?id=5)</p><p>
+
+ [https://zf5-prod.herokuapp.com/project/shop.php](https://zf5-prod.herokuapp.com/project/shop.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/zaidfar/IT-202-007/pull/63](https://github.com/zaidfar/IT-202-007/pull/63)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F5 - User will be able to click an item from a list and view a full page with more info about the item (Product Details Page)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144734982-36e6f652-29ee-492e-9a3f-e9a132aec2ff.png">
+<p>The product detail page of the baseball hat</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144735010-6fea0f41-9939-4248-b582-b86866af39ba.png">
+<p>You can see the link Product detail for the baseball hat, which leads to the product detail page.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F6 - User must be logged in for any Cart related activity below (2021-12-04)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://zf5-prod.herokuapp.com/project/shop.php](https://zf5-prod.herokuapp.com/project/shop.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/zaidfar/IT-202-007/pull/64](https://github.com/zaidfar/IT-202-007/pull/64)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F6 - User must be logged in for any Cart related activity below</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144735085-9ed36b45-1227-4a5a-9021-6ffdbc53e86c.png">
+<p>When you press the "Add to cart" button it says you are not logged in, and the item is not added.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F7 - User will be able to add items to Cart (2021-12-07)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://zf5-prod.herokuapp.com/project/shop.php](https://zf5-prod.herokuapp.com/project/shop.php)</p><p>
+
+ [https://zf5-prod.herokuapp.com/project/cart.php ](https://zf5-prod.herokuapp.com/project/cart.php )</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/zaidfar/IT-202-007/pull/64](https://github.com/zaidfar/IT-202-007/pull/64)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F7 - Cart will be table-based (id, product_id, user_id, desired_quantity, unit_cost, created, modified)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144735230-be68234b-4fb0-4edb-873b-2b3f8a1956a9.png">
+<p>I logged in and added baseball hat to the cart when i pressed the "add to cart" button.</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144735262-11717759-760e-4a1f-a504-3440d492efd4.png">
+<p>You can see my Cart table here and what has been added to it.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F7 - Adding items to Cart will not affect the Product's quantity in the Products table</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144950210-0c67d2f5-c4ac-463b-b50f-6019a090aecb.png">
+<p>A screenshot of my Products table.  I will add a "Green Shirt" to my cart as my next evidence, and finally take a screenshot of my products table again to show that its the same Stock.</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144950340-cfb6907b-14aa-4904-b268-70502b1d4753.png">
+<p>I added a "Green shirt" to my cart.</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144950419-637470f6-c6b8-41c1-826c-9b165d70b18d.png">
+<p>My Products table "Stock" is the same number.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F8 - User will be able to see their cart (2021-12-04)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://zf5-prod.herokuapp.com/project/cart.php](https://zf5-prod.herokuapp.com/project/cart.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/zaidfar/IT-202-007/pull/72](https://github.com/zaidfar/IT-202-007/pull/72)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F8 - List all the items</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/144951176-7dfefb83-c16b-4e08-bdc6-431f40249fa7.png">
+<p>I am logged in as "admin".  In the cart page you can see everything on the page that is added in the cart.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F8 - Show subtotal for each line item based on desired_quantity * unit_cost</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/145504441-ed997f49-2f64-4313-bd1f-f577477167ca.png">
+<p>You can see in the picture the price of the baseball hat is 5 dollars and there is a quantity of 6.  The cost of 6 baseball hats is 30 dollars and that is shown.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F8 - Show total cart value (sum of line item subtotals)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/145504622-6f9dc184-ff21-4c6e-8af0-1b387461257c.png">
+<p>You can see on the bottom right there is the total value of he cart value.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F9 - User will be able to remove a single item from their cart vai button click (2021-12-07)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://zf5-prod.herokuapp.com/project/cart.php](https://zf5-prod.herokuapp.com/project/cart.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/zaidfar/IT-202-007/pull/72](https://github.com/zaidfar/IT-202-007/pull/72)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F9 - User will be able to remove a single item from their cart vai button click</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/145504914-997d8dfa-4d98-4d34-8956-3c23ccbcb0e7.png">
+<p>I removed an individual item from my cart and the flash message is displayed.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F10 - User will be able to clear their entire cart via a button click (2021-12-07)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://zf5-prod.herokuapp.com/project/cart.php](https://zf5-prod.herokuapp.com/project/cart.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/zaidfar/IT-202-007/pull/72](https://github.com/zaidfar/IT-202-007/pull/72)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F10 - User will be able to clear their entire cart via a button click</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/145504914-997d8dfa-4d98-4d34-8956-3c23ccbcb0e7.png">
+<p>I clicked the empty cart button on the bottom right of the cart and all items are removed from the cart.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F11 - User will be able to change quantity of items in their cart (2021-12-07)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://zf5-prod.herokuapp.com/project/cart.php](https://zf5-prod.herokuapp.com/project/cart.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/zaidfar/IT-202-007/pull/72](https://github.com/zaidfar/IT-202-007/pull/72)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F11 - User will be able to change quantity of items in their cart</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/145505371-dba72467-f4b4-4006-a5f7-3bb8db3cf442.png">
+<p>You can change the quantity of each item in the cart</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr></td></tr></table>
 - Milestone 3
 
 - [ ] (mm/dd/yyyy of completion) User will be able to purchase items in their Cart
@@ -273,7 +621,384 @@
       - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
         - Screenshot #1 description explaining what you're trying to show
 
+ Milestone3
+ 
+ 
 - Milestone 4
+
+<table>
+<tr><td>milestone 4</td></tr><tr><td>
+<table>
+<tr><td>F1 - feature 1 ()</td></tr>
+<tr><td>Status: pending</td></tr>
+<tr><td>Links:</td></tr>
+<tr><td>PRs:</td></tr>
+<tr><td>
+<table>
+<tr><td>F1 - item 1</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F2 - Feature 2 ()</td></tr>
+<tr><td>Status: pending</td></tr>
+<tr><td>Links:</td></tr>
+<tr><td>PRs:</td></tr>
+<tr><td>
+<table>
+<tr><td>F2 - item 1</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F2 - Item 2</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F2 - Item 3</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F2 - Item 4</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F2 - Item 5</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F2 - Item 6</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F3 - Feature 3 ()</td></tr>
+<tr><td>Status: pending</td></tr>
+<tr><td>Links:</td></tr>
+<tr><td>PRs:</td></tr>
+<tr><td>
+<table>
+<tr><td>F3 - item 1</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F3 - Item 2</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F3 - Item 3</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F3 - Item 4</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F4 - Feature 4 ()</td></tr>
+<tr><td>Status: pending</td></tr>
+<tr><td>Links:</td></tr>
+<tr><td>PRs:</td></tr>
+<tr><td>
+<table>
+<tr><td>F4 - item 1</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - Item 2</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - Item 3</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - Item 4</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - Item 5</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F5 - Feature 5 ()</td></tr>
+<tr><td>Status: pending</td></tr>
+<tr><td>Links:</td></tr>
+<tr><td>PRs:</td></tr>
+<tr><td>
+<table>
+<tr><td>F5 - item 1</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F6 - Feature 6 ()</td></tr>
+<tr><td>Status: pending</td></tr>
+<tr><td>Links:</td></tr>
+<tr><td>PRs:</td></tr>
+<tr><td>
+<table>
+<tr><td>F6 - item 1</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F6 - Item 2</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F6 - Item 3</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F7 - Feature 7 ()</td></tr>
+<tr><td>Status: pending</td></tr>
+<tr><td>Links:</td></tr>
+<tr><td>PRs:</td></tr>
+<tr><td>
+<table>
+<tr><td>F7 - item 1</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr></td></tr></table>
 ### Intructions
 #### Don't delete this
 1. Pick one project type
