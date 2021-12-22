@@ -1044,6 +1044,65 @@
 </table>
 </td>
 </tr></td></tr></table>
+
+
+<table>
+<tr><td>milestone 4</td></tr><tr><td>
+<table>
+<tr><td>F1 - User will be able to rate a product they purchased ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://zf5-prod.herokuapp.com/project/shop.php](https://zf5-prod.herokuapp.com/project/shop.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/zaidfar/IT-202-007/pull/90](https://github.com/zaidfar/IT-202-007/pull/90)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F1 - Create table called Ratings (id, product_id, user_id, rating, comment, created)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/147046804-90e6d1f6-1922-42d9-b86f-beb38bf635a6.png">
+<p>The ratings table.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F2 - Add pagination to Shop Page (and any other product lists not yet mentioned) ()</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://zf5-prod.herokuapp.com/project/shop.php](https://zf5-prod.herokuapp.com/project/shop.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/zaidfar/IT-202-007/pull/90](https://github.com/zaidfar/IT-202-007/pull/90)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F2 - Add pagination to Shop Page (and any other product lists not yet mentioned)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/90267391/147047096-c3805b0a-5379-4490-9d23-3f44b50a530a.png">
+<p>Shop page has pagination, a new page after 10 results.</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="">
+<p></p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr></td></tr></table>
 ### Intructions
 #### Don't delete this
 1. Pick one project type
