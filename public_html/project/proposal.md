@@ -6,6 +6,7 @@
 ## Project Board Link: 
 ## Website Link: (Heroku Prod of Project folder)
 ## Your Name: Zaid Farooqui
+## Final Demo link: https://mediaspace.njit.edu/media/IT%20202%20shop%20demo-ZaidFarooquiDecember%2023rd%202021%2C%2012%3A30%3A05%20am/1_j53rzb42
 
 <!--
 ### Line item / Feature template (use this for each bullet point)
